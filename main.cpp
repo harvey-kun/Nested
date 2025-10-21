@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 //var
     int selected_dep, selected_sub, grade;
-    string subject_container, remarks_container,department_container;
+    string subject_container,remarks_container,department_container;
 
 //I
     cout << "==== STUDENT GRADING SYSTEM ====" << "\n";
