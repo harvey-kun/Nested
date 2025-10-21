@@ -22,7 +22,7 @@ int main(){
         cout << "\n" << "Enter Subject Code:" << "\n";
         cout << "[1] Programming 1" << "\n";
         cout << "[2] Database Management" << "\n";
-        cout << "Enter Subject Number: ";
+        cout << "Enter subject number: ";
             cin >> selected_sub;
             switch(selected_sub){
             case 1:
@@ -33,8 +33,9 @@ int main(){
             break;
             default:
                 subject_container = "Invalid User Input";
+                department_container = "Invalid User Input";
             }
-        cout << "Enter grade (0 - 100): ";
+        cout << "Enter your grade (0 - 100): ";
             cin >> grade;
     break;
 
@@ -43,7 +44,7 @@ int main(){
         cout << "\n" << "Enter Subject Code:" << "\n";
         cout << "[1] Business Communication" << "\n";
         cout << "[2] Office Procedures" << "\n";
-        cout << "Enter Subject Number: ";
+        cout << "Enter subject number: ";
             cin >> selected_sub;
             switch(selected_sub){
             case 1:
@@ -54,6 +55,7 @@ int main(){
             break;
             default:
                 subject_container = "Invalid User Input";
+                department_container = "Invalid User Input";
             }
         cout << "Enter grade (0 - 100): ";
             cin >> grade;
@@ -81,13 +83,13 @@ int main(){
         if (grade >= 60 && grade <= 74){
             remarks_container = "Needs Improvement";
         }
-        else if (grade < 60){
-            remarks_container = "Failed";
-        }
         else{
-            remarks_container = "Invalid Process";
+            remarks_container = "Invalid User Input";
         }
     }
+    else if (grade < 60){
+            remarks_container = "Failed";
+        }
     else{
         remarks_container = "Invalid User Input";
     }
